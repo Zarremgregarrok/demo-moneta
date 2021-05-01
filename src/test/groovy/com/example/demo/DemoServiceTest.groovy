@@ -49,7 +49,7 @@ class DemoServiceTest extends Specification {
     }
 
     @Unroll
-    def "processNumber converts #input to #output"(){
+    def "processNumber converts #input to #output"() {
         expect:
         demoService.processNumber(input) == output
         where:

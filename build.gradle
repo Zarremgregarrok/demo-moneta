@@ -1,0 +1,23 @@
+plugins {
+	id 'org.springframework.boot' version '2.4.5'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'idea'
+	id 'java'
+	id 'groovy'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	compile 'org.springframework.boot:spring-boot-starter-web'
+	testCompile 'org.codehaus.groovy:groovy'
+	testCompile 'org.springframework.boot:spring-boot-starter-test'
+	testCompile 'org.spockframework:spock-core:1.2-groovy-2.5'
+	testCompile 'org.spockframework:spock-spring:1.2-groovy-2.5'
+}
